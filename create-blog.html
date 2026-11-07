@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog | BlogSpace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Blog<span>Space.</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#blogs">Explore</a>
+        <a href="create-blog.html">Create Blog</a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+</header>
+
+<section class="create-hero">
+    <span class="tag">SHARE YOUR IDEAS</span>
+    <h1>Create Something <span>Amazing.</span></h1>
+    <p>Write your thoughts and share your knowledge with the world.</p>
+</section>
+
+<section class="create-section">
+
+    <div class="create-form-box">
+
+        <h2>Create New Blog</h2>
+        <p class="form-subtitle">Fill in the details below to publish your article.</p>
+
+        <form id="createBlogForm">
+
+            <label>Blog Title</label>
+            <input type="text" id="blogTitle"
+                placeholder="Enter your blog title" required>
+
+            <label>Category</label>
+            <select id="blogCategory" required>
+                <option value="">Select Category</option>
+                <option>Technology</option>
+                <option>Education</option>
+                <option>Lifestyle</option>
+                <option>Other</option>
+            </select>
+
+            <label>Image URL (Optional)</label>
+            <input type="url" id="blogImage"
+                placeholder="Paste image URL">
+
+            <label>Blog Description</label>
+            <textarea id="blogDescription"
+                rows="7"
+                placeholder="Write your blog content here..."
+                required></textarea>
+
+            <button type="submit" class="publish-btn">
+                Publish Blog →
+            </button>
+
+        </form>
+
+        <p id="publishMessage"></p>
+
+    </div>
+
+</section>
+
+<footer>
+    <h2>BlogSpace.</h2>
+    <p>Explore. Read. Learn. Grow.</p>
+    <p>© 2026 BlogSpace. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

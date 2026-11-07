@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSpace | Explore Ideas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Blog<span>Space.</span></a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#blogs">Explore</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="tag">WELCOME TO BLOGSPACE</span>
+        <h1>Ideas That Inspire.<br>
+            Stories That <span>Connect.</span>
+        </h1>
+        <p>
+            Discover interesting articles, explore new technologies
+            and learn something new every day.
+        </p>
+
+        <a href="#blogs" class="explore-btn">Explore Blogs →</a>
+    </div>
+</section>
+
+<section class="blogs-section" id="blogs">
+
+    <div class="section-heading">
+        <span class="tag">OUR COLLECTION</span>
+        <h2>Explore Our Blogs</h2>
+        <p>Find something interesting to read today.</p>
+    </div>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search your favourite topic..."
+        onkeyup="searchBlogs()"
+    >
+
+    <div class="blog-container" id="blogContainer">
+
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600" alt="Technology">
+            <div class="card-content">
+                <span>TECHNOLOGY</span>
+                <h3>Technology & Innovation</h3>
+                <p>Discover modern technology and the latest innovations.</p>
+                <button onclick="readBlog('Technology')">Read Article →</button>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600" alt="Education">
+            <div class="card-content">
+                <span>EDUCATION</span>
+                <h3>Learning & Education</h3>
+                <p>Explore knowledge, learning methods and new skills.</p>
+                <button onclick="readBlog('Education')">Read Article →</button>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600" alt="Lifestyle">
+            <div class="card-content">
+                <span>LIFESTYLE</span>
+                <h3>Better Lifestyle</h3>
+                <p>Explore ideas for a positive and productive lifestyle.</p>
+                <button onclick="readBlog('Lifestyle')">Read Article →</button>
+            </div>
+        </div>
+
+    </div>
+
+    <p id="noResult" style="display:none;"></p>
+    <div id="blogDetails"></div>
+
+</section>
+
+<section class="about-section" id="about">
+    <span class="tag">ABOUT BLOGSPACE</span>
+    <h2>A Place for Curious Minds</h2>
+    <p>
+        BlogSpace is a simple blogging platform where readers
+        can explore different topics, discover useful information
+        and enjoy reading interesting articles.
+    </p>
+</section>
+
+<section class="contact-section" id="contact">
+    <h2>Have Something to Share?</h2>
+    <p>We would love to hear from you.</p>
+    <a href="mailto:contact@blogspace.com">Contact Us</a>
+</section>
+
+<footer>
+    <h2>BlogSpace.</h2>
+    <p>Explore. Read. Learn. Grow.</p>
+    <p>© 2026 BlogSpace. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

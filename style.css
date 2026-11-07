@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8fc;
+    color: #202039;
+}
+
+.navbar {
+    background: #111127;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #a78bfa;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #a78bfa;
+}
+
+.login-btn {
+    background: #8b5cf6;
+    padding: 11px 20px;
+    border-radius: 7px;
+}
+
+.hero {
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    padding: 70px 9%;
+    background: linear-gradient(120deg, #111127, #292052, #49318b);
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: #8b5cf6;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero .tag {
+    color: #c4b5fd;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #c4b5fd;
+}
+
+.hero p {
+    color: #dedcf0;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.explore-btn {
+    display: inline-block;
+    background: #8b5cf6;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.explore-btn:hover {
+    background: #7543dc;
+}
+
+.blogs-section {
+    padding: 75px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h2,
+.about-section h2 {
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.section-heading p,
+.about-section p {
+    color: #77778b;
+    line-height: 1.7;
+}
+
+#searchInput {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    margin: 30px auto;
+    padding: 16px;
+    border: 1px solid #dedbea;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 8px #8b5cf633;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #22222210;
+    transition: 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px #22222220;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content span {
+    color: #8b5cf6;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.card-content h3 {
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.card-content p {
+    color: #77778b;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+button {
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 12px 17px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7041d4;
+}
+
+#blogDetails {
+    margin-top: 25px;
+}
+
+.search-result {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 1.8;
+    box-shadow: 0 5px 20px #22222210;
+}
+
+.about-section {
+    text-align: center;
+    padding: 75px 12%;
+    background: #efecfa;
+}
+
+.about-section p {
+    max-width: 650px;
+    margin: auto;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.contact-section p {
+    margin: 15px 0 25px;
+    color: #77778b;
+}
+
+.contact-section a {
+    display: inline-block;
+    background: #8b5cf6;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+footer {
+    background: #111127;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    line-height: 2;
+}
+
+footer h2 {
+    color: #c4b5fd;
+}
+
+@media(max-width: 600px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .blogs-section {
+        padding: 50px 6%;
+    }
+}
+/* Modern Login Page */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #111127, #30215d, #7653b9);
+}
+
+.login-box {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.25);
+}
+
+.login-logo {
+    display: block;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    color: #17172e;
+    text-decoration: none;
+}
+
+.login-logo span {
+    color: #8b5cf6;
+}
+
+.login-icon {
+    width: 55px;
+    height: 55px;
+    margin: 25px auto 15px;
+    background: #eee8ff;
+    color: #8b5cf6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.login-box h1 {
+    text-align: center;
+    color: #202039;
+    font-size: 28px;
+}
+
+.login-subtitle {
+    text-align: center;
+    color: #77778b;
+    line-height: 1.6;
+    margin: 12px 0 25px;
+}
+
+.login-box label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dedbea;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #8b5cf6;
+}
+
+.login-submit {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-submit:hover {
+    background: #7041d4;
+}
+
+.login-bottom {
+    text-align: center;
+    margin-top: 25px;
+    color: #77778b;
+    font-size: 14px;
+}
+
+.login-bottom a {
+    color: #8b5cf6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 22px;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#loginMessage {
+    text-align: center;
+    margin-top: 15px;
+    color: #24966b;
+}
+.search-result {
+    background: white;
+    padding: 35px;
+    margin: 25px auto;
+    max-width: 850px;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    line-height: 1.8;
+}
+
+.search-result h2 {
+    font-size: 30px;
+    color: #292052;
+    margin: 15px 0;
+}
+
+.search-result h3 {
+    color: #7041d4;
+    margin-top: 22px;
+}
+
+.search-result p {
+    color: #666;
+}
+
+.search-result ul {
+    padding-left: 25px;
+    color: #555;
+}
+/* Create Blog Page */
+
+.create-hero {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(120deg, #111127, #49318b);
+    color: white;
+}
+
+.create-hero h1 {
+    font-size: 38px;
+    margin: 18px 0;
+}
+
+.create-hero h1 span {
+    color: #c4b5fd;
+}
+
+.create-hero p {
+    color: #dedcf0;
+    line-height: 1.7;
+}
+
+.create-section {
+    padding: 55px 20px;
+}
+
+.create-form-box {
+    background: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+.create-form-box h2 {
+    color: #292052;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    color: #77778b;
+    margin-bottom: 25px;
+}
+
+.create-form-box label {
+    display: block;
+    margin: 18px 0 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.create-form-box input,
+.create-form-box select,
+.create-form-box textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dedbea;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.create-form-box input:focus,
+.create-form-box select:focus,
+.create-form-box textarea:focus {
+    outline: none;
+    border-color: #8b5cf6;
+}
+
+.publish-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.publish-btn:hover {
+    background: #7041d4;
+}
+
+#publishMessage {
+    text-align: center;
+    margin-top: 18px;
+    color: #24966b;
+}
