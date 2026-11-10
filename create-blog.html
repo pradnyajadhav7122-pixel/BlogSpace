@@ -1,21 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Blog | BlogSpace</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
 
 <header class="navbar">
-    <a href="index.html" class="logo">Blog<span>Space.</span></a>
+    <a href="Index.html" class="logo">Blog<span>Space.</span></a>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="index.html#blogs">Explore</a>
-        <a href="create-blog.html">Create Blog</a>
-        <a href="login.html" class="login-btn">Login</a>
+        <a href="Index.html">Home</a>
+        <a href="Index.html#blogs">Explore</a>
+        <a href="Create-blog.html">Create Blog</a>
+        <a href="Login.html" class="login-btn">Login</a>
     </nav>
 </header>
 
@@ -30,32 +32,36 @@
     <div class="create-form-box">
 
         <h2>Create New Blog</h2>
-        <p class="form-subtitle">Fill in the details below to publish your article.</p>
+        <p class="form-subtitle">
+            Fill in the details below to publish your article.
+        </p>
 
         <form id="createBlogForm">
 
             <label>Blog Title</label>
-            <input type="text" id="blogTitle"
-                placeholder="Enter your blog title" required>
+            <input
+                type="text"
+                id="blogTitle"
+                placeholder="Enter your blog title"
+                required
+            >
 
             <label>Category</label>
             <select id="blogCategory" required>
                 <option value="">Select Category</option>
-                <option>Technology</option>
-                <option>Education</option>
-                <option>Lifestyle</option>
-                <option>Other</option>
+                <option value="Technology">Technology</option>
+                <option value="Education">Education</option>
+                <option value="Lifestyle">Lifestyle</option>
+                <option value="Other">Other</option>
             </select>
 
-            <label>Image URL (Optional)</label>
-            <input type="url" id="blogImage"
-                placeholder="Paste image URL">
-
             <label>Blog Description</label>
-            <textarea id="blogDescription"
+            <textarea
+                id="blogDescription"
                 rows="7"
                 placeholder="Write your blog content here..."
-                required></textarea>
+                required
+            ></textarea>
 
             <button type="submit" class="publish-btn">
                 Publish Blog →
@@ -75,7 +81,7 @@
     <p>© 2026 BlogSpace. All Rights Reserved.</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="Script.js"></script>
 
 </body>
 </html>
